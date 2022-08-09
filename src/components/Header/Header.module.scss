@@ -1,0 +1,14 @@
+.header {
+  background-color: pink;
+
+  &__title {
+    color: #c4c4c4;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+}
