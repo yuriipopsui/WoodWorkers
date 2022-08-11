@@ -1,0 +1,29 @@
+.slider {
+  height: 80vh;
+  background-image: url('../../assets/bg3.jpg');
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+
+
+  &__content {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // background-color: #cecece;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    // overflow: hidden;
+  }
+
+  &__item {
+    width: 50%;
+    height: 50%;
+    margin: 80px 20px 0;
+  }
+}
