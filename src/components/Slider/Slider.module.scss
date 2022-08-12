@@ -1,29 +1,106 @@
 .slider {
-  height: 80vh;
+  height: 90vh;
   background-image: url('../../assets/bg3.jpg');
   align-items: center;
   margin: 0 auto;
   position: relative;
 
 
-  &__content {
+  &__container {
     position: absolute;
     content: '';
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    // background-color: #cecece;
     width: 800px;
     height: 400px;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
     // overflow: hidden;
   }
 
   &__item {
-    width: 50%;
-    height: 50%;
-    margin: 80px 20px 0;
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    &_desc {
+      position: absolute;
+      content: '';
+      top: -50px;
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%);
+      color: #fff;
+      font-weight: 700;
+      font-size: 30px;
+      font-style: italic;
+    }
   }
+
+  &__card {
+    animation: fadeOut 2s;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__active {
+    opacity: 1;
+    animation: fadeIn 2s;
+    pointer-events: all;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+  transition: 0.6s ease;
+  border: none;
+  background: transparent;
+  user-select: none;
+}
+
+.next {
+  right: 50px;
+}
+
+.prev {
+  left: 50px;
+}
+
+.prev:hover,
+.next:hover {
+  color: #c4c4c4;
 }
