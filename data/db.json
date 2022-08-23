@@ -1,0 +1,46 @@
+{
+  "goods": [
+    {
+      "id": 1,
+      "title": "FIRST Product",
+      "description": "Very good Product",
+      "price": 12,
+      "picture": "picture"
+    },
+    {
+      "id": 2,
+      "title": "Second Product",
+      "description": "Some Product",
+      "price": 10,
+      "picture": "picture 2"
+    },
+    {
+      "id": 3,
+      "title": "Third Product",
+      "description": "So So Product",
+      "price": 8,
+      "picture": "picture 3"
+    },
+    {
+      "id": 4,
+      "title": "Forth Product",
+      "description": "Wow Product",
+      "price": 16,
+      "picture": "picture 4"
+    },
+    {
+      "id": 5,
+      "title": "One more Product",
+      "description": "Wow Product",
+      "price": 16,
+      "picture": "picture 4"
+    },
+    {
+      "id": 6,
+      "title": "And finally Product",
+      "description": "Wow Product",
+      "price": 16,
+      "picture": "picture 4"
+    }
+  ]
+}

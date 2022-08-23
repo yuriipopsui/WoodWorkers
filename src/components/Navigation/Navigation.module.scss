@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -5,9 +7,10 @@
   margin-right: 30px;
 
   & a {
+    font-size: 20px;
     font-weight: 500;
-    color: #1c1c1c;
-    text-shadow: 1px 3px 3px grey;
+    color: $bgWhite;
+    text-shadow: 1px 3px 3px $text;
     transition: all 0.5s;
 
     &:hover {

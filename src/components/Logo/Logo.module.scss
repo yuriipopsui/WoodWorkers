@@ -1,10 +1,13 @@
+@import '../../styles/variables.scss';
+
 .logo {
   padding: 5px 10px;
   margin-left: 30px;
-  background-color: rgb(227, 235, 63);
+  background-color: $bgBrown;
   border-radius: 5px;
-  color: #1c1c1c;
+  color: $bgWhite;
+  font-size: 18px;
   font-weight: 700;
-  box-shadow: 0 5px 7px grey;
+  box-shadow: 0 5px 7px $text;
   transition: all 0.5s;
 }
