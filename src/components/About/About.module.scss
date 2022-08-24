@@ -10,81 +10,13 @@
     margin-bottom: 50px;
   }
 
-}
-
-.productList {
-  width: 80%;
-  display: block;
-  margin: 0 auto;
-
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-}
-
-.productCard {
-  width: 300px;
-  box-shadow: 3px 3px 10px $shadow;
-  margin-bottom: 30px;
-  background: $bgWhite;
-  border-radius: 7px;
-  transition: all 0.5s;
-
-  &__title {
+  &__text {
+    width: 80%;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
     color: $bgBrown;
-  }
-
-  &__picture {
-    width: 100%;
-    height: 150px;
-    background: $shadow;
-
-  }
-
-  &__description {
-    font-style: italic;
-    font-weight: 700;
-    color: $bgAccent;
-    font-size: 20px;
-  }
-
-  &__price {
-    font-style: italic;
-    font-weight: 700;
-    color: $bgAccent;
-    margin-bottom: 20px;
-  }
-
-  &__btns {
-
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-
-    &>button {
-      padding: 10px 15px;
-      border: none;
-      border-radius: 15px;
-      color: $bgWhite;
-      font-weight: 700;
-      cursor: pointer;
-    }
-
-    &_details {
-      background: $bgAccent;
-    }
-
-    &_buy {
-      background: $btnBuy;
-    }
-  }
-
-  &:hover {
-    transform: translate(-2px, -2px);
-    box-shadow: 5px 5px 20px $text;
+    text-align: center;
+    margin: 0 auto 50px;
   }
 }
